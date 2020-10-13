@@ -4,7 +4,7 @@ import StaysSection from "./stays";
 
 function Home() {
   return (
-    <div className="min-h-screen min-w-full bg-gray-100">
+    <div id="home-page">
       <HeroSection />
       <ToursSection />
       <StaysSection />
