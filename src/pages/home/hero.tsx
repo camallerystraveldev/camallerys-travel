@@ -21,7 +21,7 @@ function HeroSection() {
   return (
     <div id="hero-section">
       <div className="bg-hero bg-center shadow-lg rounded-b-lg overflow-hidden">
-        <div className="bg-gray-700 bg-opacity-25 backdrop-blur h-full w-full px-10 py-12">
+        <div className="bg-gray-700 bg-opacity-25 backdrop-blur h-full w-full px-8 py-12">
           <div className="text-center">
             <h1 className="text-white font-extrabold text-4xl leading-tight tracking-tight">
               La Habana, Cuba
