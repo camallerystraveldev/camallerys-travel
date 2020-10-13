@@ -5,7 +5,11 @@ module.exports = {
   },
   purge: ["./pages/**/*.tsx", "./src/**/*.tsx"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: (theme) => ({
+        hero: "url('/assets/hero/hero.jpg')",
+      }),
+    },
   },
   variants: {},
   plugins: [],
