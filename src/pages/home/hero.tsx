@@ -4,11 +4,11 @@ function SearchBox() {
   return (
     <div className="max-w-xs">
       <div className="mx-auto w-3/4">
-        <div className="bg-white flex items-center justify-around px-3 py-2 rounded-full">
+        <div className="bg-white bg-opacity-75 flex items-center justify-around px-3 py-2 rounded-full">
           <SearchIconSM className="w-5 h-5 text-gray-600 flex-shrink-0" />
           <input
             placeholder="¿A donde viajas?"
-            className="flex-grow focus:outline-none text-gray-700 px-2 text-center min-w-0 bg-transparent"
+            className="flex-grow focus:outline-none min-w-0 bg-transparent text-gray-600 placeholder-current font-medium px-2 text-center"
           />
           <div className="w-5 h-5 flex-shrink-0"></div>
         </div>
