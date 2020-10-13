@@ -1,15 +1,18 @@
-import SearchIcon from "src/icons/search";
+import SearchIconSM from "src/icons/heroicons/small/search";
 
 function SearchBox() {
   return (
-    <div className="bg-white flex px-3 py-2 rounded-full max-w-xs">
-      <div className="flex-grow-0 flex-shrink-0">
-        <SearchIcon className="h-6 w-6 text-gray-600" />
+    <div className="max-w-xs">
+      <div className="mx-auto w-3/4">
+        <div className="bg-white flex items-center justify-around px-3 py-2 rounded-full">
+          <SearchIconSM className="w-5 h-5 text-gray-600 flex-shrink-0" />
+          <input
+            placeholder="¿A donde viajas?"
+            className="flex-grow focus:outline-none text-gray-700 px-2 text-center min-w-0"
+          />
+          <div className="w-5 h-5 flex-shrink-0"></div>
+        </div>
       </div>
-      <input
-        placeholder="¿A donde viajas?"
-        className="flex-grow focus:outline-none text-gray-700 px-2 pl-5"
-      />
     </div>
   );
 }
@@ -31,7 +34,7 @@ function HeroSection() {
             </p>
           </div>
 
-          <div className="px-5 mt-10">
+          <div className="mt-10">
             <SearchBox />
           </div>
         </div>
