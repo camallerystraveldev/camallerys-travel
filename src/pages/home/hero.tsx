@@ -8,7 +8,7 @@ function SearchBox() {
           <SearchIconSM className="w-5 h-5 text-gray-600 flex-shrink-0" />
           <input
             placeholder="¿A donde viajas?"
-            className="flex-grow focus:outline-none text-gray-700 px-2 text-center min-w-0"
+            className="flex-grow focus:outline-none text-gray-700 px-2 text-center min-w-0 bg-transparent"
           />
           <div className="w-5 h-5 flex-shrink-0"></div>
         </div>
