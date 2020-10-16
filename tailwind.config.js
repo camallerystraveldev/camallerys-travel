@@ -15,6 +15,21 @@ const twconfigFilters = {
   },
 };
 
+const twconfigAspectRatio = {
+  theme: {
+    aspectRatio: {
+      // defaults to {}
+      none: 0,
+      square: [1, 1],
+      "16/9": [16, 9],
+      "4/3": [4, 3],
+    },
+  },
+  variants: {
+    aspectRatio: ["responsive"], // defaults to ['responsive']
+  },
+};
+
 const twconfigBackgroundImg = {
   theme: {
     backgroundImage: (theme) => ({
@@ -32,11 +47,13 @@ module.exports = {
   theme: {
     extend: {
       ...twconfigFilters.theme,
+      ...twconfigAspectRatio.theme,
       ...twconfigBackgroundImg.theme,
     },
   },
   variants: {
     ...twconfigFilters.variants,
+    ...twconfigAspectRatio.variants,
   },
   plugins: [require("tailwindcss-filters")],
 };
