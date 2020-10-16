@@ -15,6 +15,14 @@ const twconfigFilters = {
   },
 };
 
+const twconfigBackgroundImg = {
+  theme: {
+    backgroundImage: (theme) => ({
+      hero: "url('/assets/hero/hero.jpg')",
+    }),
+  },
+};
+
 module.exports = {
   future: {
     removeDeprecatedGapUtilities: true,
@@ -24,9 +32,7 @@ module.exports = {
   theme: {
     extend: {
       ...twconfigFilters.theme,
-      backgroundImage: (theme) => ({
-        hero: "url('/assets/hero/hero.jpg')",
-      }),
+      ...twconfigBackgroundImg.theme,
     },
   },
   variants: {
