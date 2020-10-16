@@ -22,11 +22,11 @@ function HeroSection() {
     <div id="hero-section">
       <div className="bg-hero bg-center shadow-lg rounded-b-lg overflow-hidden">
         <div className="bg-gray-700 bg-opacity-25 backdrop-blur h-full w-full px-8 py-12">
-          <div className="text-center">
-            <h1 className="text-white font-extrabold text-4xl leading-tight tracking-tight">
+          <div className="text-white text-center leading-tight">
+            <h1 className="font-extrabold text-4xl tracking-tight">
               La Habana, Cuba
             </h1>
-            <p className="text-white mt-4 leading-tight">
+            <p className="mt-4">
               Viva una experiencia inolvidable. Conozca La Habana, hermosa
               ciudad colonial llena de historia. Pasee en autos americanos de
               mediados del siglo pasado. Disfrute de las playas de este paraíso
