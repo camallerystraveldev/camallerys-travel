@@ -48,7 +48,7 @@ function ExperiencesSection() {
       </h1>
       <div className="mt-8 px-5 flex flex-col md:flex-row items-center justify-start md:justify-center">
         {experiences.map((e) => (
-          <ExperienceCard id={e.id} name={e.name} />
+          <ExperienceCard key={e.id} id={e.id} name={e.name} />
         ))}
       </div>
       <div className="mt-8 w-full text-center">
