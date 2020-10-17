@@ -1,16 +1,16 @@
 import Link from "next/link";
 
-type TourPreviewCardProps = {
+type ExperienceCardProps = {
   id: string;
   name: string;
 };
 
-function TourPreviewCard({ id, name }: TourPreviewCardProps) {
+function ExperienceCard({ id, name }: ExperienceCardProps) {
   return (
     <div className="w-48">
       <div className="relative aspect-ratio-square rounded-lg overflow-hidden shadow-lg">
         <img
-          src="https://source.unsplash.com/random/600x400"
+          src={`/assets/experiences/${id}/preview.jpg`}
           className="absolute object-cover object-center w-full h-full"
         />
       </div>
@@ -33,17 +33,17 @@ function TourPreviewCard({ id, name }: TourPreviewCardProps) {
   );
 }
 
-function ToursSection() {
+function ExperiencesSection() {
   return (
-    <div id="top-products-section" className="mt-8 px-4">
+    <div id="experiences-section" className="mt-8 px-4">
       <h1 className="text-gray-700 text-lg text-center font-extrabold">
         Las experiencias más populares
       </h1>
       <div className="mt-6 flex items-center justify-around">
-        <TourPreviewCard id="valle-de-viñales" name="Valle de Viñales" />
+        <ExperienceCard id="varadero" name="Varadero" />
       </div>
     </div>
   );
 }
 
-export default ToursSection;
+export default ExperiencesSection;
