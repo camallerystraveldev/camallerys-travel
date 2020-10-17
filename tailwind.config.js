@@ -69,7 +69,7 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
   },
-  purge: ["./pages/**/*.tsx", "./src/**/*.tsx"],
+  purge: ["./pages/**/*.tsx"],
   theme: {
     extend: {
       ...twconfigFilters.theme,
