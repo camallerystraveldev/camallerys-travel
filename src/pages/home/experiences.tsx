@@ -8,7 +8,7 @@ type ExperienceCardProps = {
 
 function ExperienceCard({ id, name }: ExperienceCardProps) {
   return (
-    <div className="w-48 md:w-56 lg:w-64 ml-8">
+    <div className="w-full max-w-xs">
       <div className="relative aspect-ratio-square rounded-lg overflow-hidden shadow-lg">
         <img
           src={`/assets/experiences/${id}/preview.jpg`}
@@ -40,16 +40,12 @@ function ExperiencesSection() {
       <h1 className="text-gray-700 text-lg text-center font-extrabold">
         Las experiencias más populares
       </h1>
-      <div className="px-6">
-        <div className="overflow-auto scrolling-touch text-center">
-          <div className="inline-flex py-6 justify-center">
-            <ExperienceCard id="test" name="Experiencia de prueba" />
-            <ExperienceCard id="test" name="Experiencia de prueba" />
-            <ExperienceCard id="test" name="Experiencia de prueba" />
-          </div>
-        </div>
+      <div className="mt-6 grid grid-cols-1 grid-rows-3 md:grid-cols-3 md:grid-rows-1 gap-5 place-items-center px-5">
+        <ExperienceCard id="test" name="Experiencia de prueba" />
+        <ExperienceCard id="test" name="Experiencia de prueba" />
+        <ExperienceCard id="test" name="Experiencia de prueba" />
       </div>
-      <div className="w-full text-center">
+      <div className="mt-6 w-full text-center">
         <Link href="/experiences">
           <a className="text-blue-800 inline-flex items-center">
             <span className="uppercase text-xs font-bold">Ver todas</span>
