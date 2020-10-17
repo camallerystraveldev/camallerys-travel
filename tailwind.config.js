@@ -38,6 +38,12 @@ const twconfigBackgroundImg = {
   },
 };
 
+const twconfigFirstEnabled = {
+  variants: {
+    margin: ["responsive", "first"],
+  },
+};
+
 module.exports = {
   future: {
     removeDeprecatedGapUtilities: true,
@@ -54,6 +60,7 @@ module.exports = {
   variants: {
     ...twconfigFilters.variants,
     ...twconfigAspectRatio.variants,
+    ...twconfigFirstEnabled.variants,
   },
   plugins: [
     require("tailwindcss-filters"),

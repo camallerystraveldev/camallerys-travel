@@ -8,7 +8,7 @@ type ExperienceCardProps = {
 
 function ExperienceCard({ id, name }: ExperienceCardProps) {
   return (
-    <div className="w-full max-w-xs">
+    <div className="w-full max-w-xs first:ml-0 first:mt-0 mt-4 md:mt-0 md:ml-12">
       <div className="relative aspect-ratio-square rounded-lg overflow-hidden shadow-lg">
         <img
           src={`/assets/experiences/${id}/preview.jpg`}
@@ -35,15 +35,21 @@ function ExperienceCard({ id, name }: ExperienceCardProps) {
 }
 
 function ExperiencesSection() {
+  const experiences = [
+    { id: "test", name: "Experiencia de prueba" },
+    { id: "test", name: "Experiencia de prueba" },
+    { id: "test", name: "Experiencia de prueba" },
+  ];
+
   return (
     <div id="experiences-section" className="mt-8 px-4">
       <h1 className="text-gray-700 text-lg text-center font-extrabold">
         Las experiencias más populares
       </h1>
-      <div className="mt-6 grid grid-cols-1 grid-rows-3 md:grid-cols-3 md:grid-rows-1 gap-5 place-items-center px-5">
-        <ExperienceCard id="test" name="Experiencia de prueba" />
-        <ExperienceCard id="test" name="Experiencia de prueba" />
-        <ExperienceCard id="test" name="Experiencia de prueba" />
+      <div className="mt-6 px-5 flex flex-col md:flex-row items-center justify-start md:justify-center">
+        {experiences.map((e) => (
+          <ExperienceCard id={e.id} name={e.name} />
+        ))}
       </div>
       <div className="mt-6 w-full text-center">
         <Link href="/experiences">
