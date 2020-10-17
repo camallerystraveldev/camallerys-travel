@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ChevronRightIconSM from "src/icons/heroicons/small/chevron-right";
 
 type ExperienceCardProps = {
   id: string;
@@ -7,7 +8,7 @@ type ExperienceCardProps = {
 
 function ExperienceCard({ id, name }: ExperienceCardProps) {
   return (
-    <div className="w-48">
+    <div className="w-48 md:w-56 lg:w-64">
       <div className="relative aspect-ratio-square rounded-lg overflow-hidden shadow-lg">
         <img
           src={`/assets/experiences/${id}/preview.jpg`}
@@ -41,6 +42,14 @@ function ExperiencesSection() {
       </h1>
       <div className="mt-6 flex items-center justify-around">
         <ExperienceCard id="test" name="Experiencia de prueba" />
+      </div>
+      <div className="mt-6 w-full text-center">
+        <Link href="/experiences">
+          <a className="text-blue-800 inline-flex items-center">
+            <span className="uppercase text-xs font-bold">Ver todas</span>
+            <ChevronRightIconSM className="w-4 h-4" />
+          </a>
+        </Link>
       </div>
     </div>
   );
