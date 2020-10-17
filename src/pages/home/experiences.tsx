@@ -36,9 +36,9 @@ function ExperienceCard({ id, name }: ExperienceCardProps) {
 
 function ExperiencesSection() {
   const experiences = [
-    { id: "test", name: "Experiencia de prueba" },
-    { id: "test", name: "Experiencia de prueba" },
-    { id: "test", name: "Experiencia de prueba" },
+    { id: "habana-vieja", name: "Habana Vieja" },
+    { id: "valle-viñales", name: "Valle de Viñales" },
+    { id: "varadero", name: "Varadero" },
   ];
 
   return (
