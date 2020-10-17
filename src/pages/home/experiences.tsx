@@ -40,7 +40,7 @@ function ExperiencesSection() {
         Las experiencias más populares
       </h1>
       <div className="mt-6 flex items-center justify-around">
-        <ExperienceCard id="varadero" name="Varadero" />
+        <ExperienceCard id="test" name="Experiencia de prueba" />
       </div>
     </div>
   );
