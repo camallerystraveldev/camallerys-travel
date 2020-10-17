@@ -40,10 +40,16 @@ function ExperiencesSection() {
       <h1 className="text-gray-700 text-lg text-center font-extrabold">
         Las experiencias más populares
       </h1>
-      <div className="mt-6 flex items-center justify-around">
-        <ExperienceCard id="test" name="Experiencia de prueba" />
+      <div className="px-6">
+        <div className="overflow-auto scrolling-touch text-center">
+          <div className="inline-flex py-6 justify-center gap-x-8">
+            <ExperienceCard id="test" name="Experiencia de prueba" />
+            <ExperienceCard id="test" name="Experiencia de prueba" />
+            <ExperienceCard id="test" name="Experiencia de prueba" />
+          </div>
+        </div>
       </div>
-      <div className="mt-6 w-full text-center">
+      <div className="w-full text-center">
         <Link href="/experiences">
           <a className="text-blue-800 inline-flex items-center">
             <span className="uppercase text-xs font-bold">Ver todas</span>
