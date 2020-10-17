@@ -111,7 +111,7 @@ function ExperiencesSection() {
 
 //#endregion
 
-function Home() {
+export default function Home() {
   return (
     <div id="home-page">
       <HeroSection />
@@ -119,5 +119,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;

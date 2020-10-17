@@ -1,6 +1,6 @@
 import { SVGProps } from "react";
 
-function SearchIconSM(props: SVGProps<SVGSVGElement>) {
+export default function SearchIconSM(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -16,5 +16,3 @@ function SearchIconSM(props: SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
-
-export default SearchIconSM;
