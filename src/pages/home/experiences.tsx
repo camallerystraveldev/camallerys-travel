@@ -8,7 +8,7 @@ type ExperienceCardProps = {
 
 function ExperienceCard({ id, name }: ExperienceCardProps) {
   return (
-    <div className="w-full max-w-xs first:ml-0 first:mt-0 mt-4 md:mt-0 md:ml-12">
+    <div className="w-full max-w-xs first:ml-0 first:mt-0 mt-6 md:mt-0 md:ml-12">
       <div className="relative aspect-ratio-square rounded-lg overflow-hidden shadow-lg">
         <img
           src={`/assets/experiences/${id}/preview.jpg`}
