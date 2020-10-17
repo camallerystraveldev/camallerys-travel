@@ -54,7 +54,7 @@ function ExperiencesSection() {
       <div className="mt-8 w-full text-center">
         <Link href="/experiences">
           <a className="text-blue-800 inline-flex items-center">
-            <span className="uppercase text-xs font-bold">Ver todas</span>
+            <span className="uppercase text-sm font-bold">Ver todas</span>
             <ChevronRightIconSM className="w-4 h-4" />
           </a>
         </Link>
