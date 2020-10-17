@@ -55,7 +55,7 @@ function ExperiencesSection() {
         <Link href="/experiences">
           <a className="text-blue-800 inline-flex items-center">
             <span className="uppercase text-sm font-bold">Ver todas</span>
-            <ChevronRightIconSM className="w-5 h-5 animate-bounce-x ml-1" />
+            <ChevronRightIconSM className="w-4 h-4 animate-bounce-x ml-1" />
           </a>
         </Link>
       </div>
