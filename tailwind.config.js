@@ -55,5 +55,8 @@ module.exports = {
     ...twconfigFilters.variants,
     ...twconfigAspectRatio.variants,
   },
-  plugins: [require("tailwindcss-filters")],
+  plugins: [
+    require("tailwindcss-filters"),
+    require("tailwindcss-aspect-ratio"),
+  ],
 };
